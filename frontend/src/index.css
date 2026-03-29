@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #3d41bf 0%, #6077d1 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Only center content for login and change password pages */
+#root:has(.login-container),
+#root:has(.change-password-container) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dashboard should not be centered */
+#root:has(.dashboard-container) {
+  display: block;
+}

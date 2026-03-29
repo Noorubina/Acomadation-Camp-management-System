@@ -1,0 +1,120 @@
+.loginContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4b6ebc, #4867d8);
+  font-family: Arial, sans-serif;
+}
+
+.loginCard {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 350px;
+  text-align: center;
+}
+
+.header .logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header p {
+  margin: 0.3rem 0 1.5rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+.loginForm {
+  text-align: left;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #3a7bd5;
+  outline: none;
+}
+
+.error {
+  border-color: #e74c3c !important;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.loginButton {
+  width: 100%;
+  background-color: #3a7bd5;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #0053ba;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer a {
+  color: #3a7bd5;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.loginButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  background: #fee;
+  color: #c53030;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #feb2b2;
+}
